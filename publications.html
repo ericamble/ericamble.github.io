@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | Eric</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+        :root {
+            --primary-color: #10b981;
+            --text-main: #3f3f46;
+            --text-muted: #71717a;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: #ffffff;
+            color: var(--text-main);
+            -webkit-font-smoothing: antialiased;
+            scroll-behavior: smooth;
+        }
+
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .section-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            color: var(--primary-color);
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .section-label::after {
+            content: "";
+            height: 1px;
+            flex-grow: 1;
+            background: linear-gradient(to right, #f4f4f5, transparent);
+        }
+
+        .year-badge {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            font-weight: 700;
+            color: #10b981;
+            background: #ecfdf5;
+            padding: 0.15rem 0.5rem;
+            border-radius: 3px;
+        }
+
+        .venue-badge {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            font-weight: 600;
+            color: #71717a;
+            background: #f4f4f5;
+            padding: 0.15rem 0.5rem;
+            border-radius: 3px;
+        }
+
+        .paper-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #3f3f46;
+            line-height: 1.5;
+        }
+
+        .paper-title a {
+            color: #3f3f46;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .paper-title a:hover {
+            color: #10b981;
+            border-bottom-color: #10b981;
+        }
+
+        .paper-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+            align-items: center;
+        }
+
+        .arxiv-link {
+            font-size: 9px;
+            font-family: 'JetBrains Mono', monospace;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.1rem 0.4rem;
+            background: #fef3c7;
+            color: #d97706;
+            border-radius: 3px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-left: 0.25rem;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid #f4f4f5;
+        }
+
+        .paper-item {
+            padding: 1.25rem 0;
+            border-bottom: 1px solid #f4f4f5;
+        }
+
+        .paper-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body class="leading-relaxed">
+
+    <!-- navi -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="max-w-4xl mx-auto px-6 h-14 flex items-center justify-between">
+            <a href="index.html" class="text-xs font-bold tracking-widest uppercase text-zinc-500 hover:text-emerald-500 transition-colors">Eric</a>
+            <div class="flex space-x-6 text-[10px] mono font-bold text-zinc-400 uppercase tracking-widest">
+                <a href="index.html#experience" class="hover:text-emerald-500 transition-colors">Experience</a>
+                <a href="index.html#education" class="hover:text-emerald-500 transition-colors">Education</a>
+                <a href="publications.html" class="text-emerald-500">Publications</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-12 px-6 bg-zinc-100">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl font-extrabold tracking-tighter text-zinc-700 mb-4 leading-none">
+                PUBLICATIONS<span class="text-emerald-400">.</span>
+            </h1>
+            <p class="text-sm text-zinc-400 font-medium">
+                研究论文与学术发表
+            </p>
+        </div>
+    </header>
+
+    <!-- Publications List -->
+    <section class="px-6 py-12 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <span class="section-label">Selected Papers</span>
+
+            <div class="space-y-0">
+                <!-- 2026 -->
+                <div class="paper-item">
+                    <div class="paper-title">Chain of World: World Model Thinking in Latent Motion</div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2026</span>
+                        <span class="venue-badge">CVPR</span>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <div class="paper-title"><a href="https://arxiv.org/abs/2508.13911" target="_blank">PhysGM: Large Physical Gaussian Model for Feed-Forward 4D Synthesis</a><span class="arxiv-link">arXiv</span></div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2026</span>
+                        <span class="venue-badge">CVPR</span>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <div class="paper-title">MoCa: Modeling Object Consistency for 3D Camera Control in Video Generation</div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2026</span>
+                        <span class="venue-badge">ICLR</span>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <div class="paper-title"><a href="https://arxiv.org/abs/2510.24734" target="_blank">DrivingScene: A Multi-Task Online Feed-Forward 3D Gaussian Splatting Method for Dynamic Driving Scenes</a><span class="arxiv-link">arXiv</span></div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2026</span>
+                        <span class="venue-badge">ICASSP</span>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <div class="paper-title"><a href="https://arxiv.org/abs/2510.12282" target="_blank">PAGS: Priority-Adaptive Gaussian Splatting for Dynamic Driving Scenes</a><span class="arxiv-link">arXiv</span></div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2026</span>
+                        <span class="venue-badge">ICASSP</span>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <div class="paper-title"><a href="https://arxiv.org/abs/2512.04551" target="_blank">Multi-Loss Learning for Speech Emotion Recognition with Energy-Adaptive Mixup and Frame-Level Attention</a><span class="arxiv-link">arXiv</span></div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2026</span>
+                        <span class="venue-badge">ICASSP</span>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <div class="paper-title"><a href="https://arxiv.org/abs/2601.22054" target="_blank">Metric Anything: Scaling Depth Pretraining with Noisy Heterogeneous Sources</a><span class="arxiv-link">arXiv</span></div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2026</span>
+                        <span class="venue-badge">arXiv</span>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <div class="paper-title"><a href="https://arxiv.org/abs/2602.03028" target="_blank">Muse: A Multi-agent Framework for Unconstrained Story Envisioning via Closed-Loop Cognitive Orchestration</a><span class="arxiv-link">arXiv</span></div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2026</span>
+                        <span class="venue-badge">arXiv</span>
+                    </div>
+                </div>
+
+                <!-- 2025 -->
+                <div class="paper-item">
+                    <div class="paper-title"><a href="https://arxiv.org/abs/2512.16360" target="_blank">EverybodyDance: Bipartite Graph-Based Identity Correspondence for Multi-Character Animation</a><span class="arxiv-link">arXiv</span></div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2025</span>
+                        <span class="venue-badge">NeurIPS</span>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <div class="paper-title"><a href="https://arxiv.org/abs/2507.04599" target="_blank">Qr-lora: Efficient and disentangled fine-tuning via qr decomposition for customized generation</a><span class="arxiv-link">arXiv</span></div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2025</span>
+                        <span class="venue-badge">ICCV</span>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <div class="paper-title"><a href="https://arxiv.org/abs/2410.07151" target="_blank">DH-FaceVid-1K: A Large-Scale High-Quality Dataset for Face Video Generation</a><span class="arxiv-link">arXiv</span></div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2025</span>
+                        <span class="venue-badge">ICCV</span>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <div class="paper-title"><a href="https://arxiv.org/abs/2408.16540" target="_blank">Grpose: Learning graph relations for human image generation with pose priors</a><span class="arxiv-link">arXiv</span></div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2025</span>
+                        <span class="venue-badge">AAAI</span>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <div class="paper-title"><a href="https://arxiv.org/abs/2511.14530" target="_blank">DeCo-VAE: Learning Compact Latents for Video Reconstruction via Decoupled Representation</a><span class="arxiv-link">arXiv</span></div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2025</span>
+                        <span class="venue-badge">arXiv</span>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <div class="paper-title"><a href="https://arxiv.org/abs/2506.07136" target="_blank">Hi-VAE: Efficient Video Autoencoding with Global and Detailed Motion</a><span class="arxiv-link">arXiv</span></div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2025</span>
+                        <span class="venue-badge">arXiv</span>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <div class="paper-title"><a href="https://arxiv.org/abs/2506.05858" target="_blank">ChronoTailor: Harnessing Attention Guidance for Fine-Grained Video Virtual Try-On</a><span class="arxiv-link">arXiv</span></div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2025</span>
+                        <span class="venue-badge">arXiv</span>
+                    </div>
+                </div>
+
+                <!-- 2024 -->
+                <div class="paper-item">
+                    <div class="paper-title">Enhancing Realism in 3D Facial Animation Using Conformer-Based Generation and Automated Post-Processing</div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2024</span>
+                        <span class="venue-badge">ICASSP</span>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <div class="paper-title"><a href="https://arxiv.org/abs/2309.15512" target="_blank">High-fidelity speech synthesis with minimal supervision: All using diffusion models</a><span class="arxiv-link">arXiv</span></div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2024</span>
+                        <span class="venue-badge">ICASSP</span>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <div class="paper-title"><a href="https://arxiv.org/abs/2307.15484" target="_blank">Minimally-supervised speech synthesis with conditional diffusion model and language model: A comparative study of semantic coding</a><span class="arxiv-link">arXiv</span></div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2024</span>
+                        <span class="venue-badge">ICASSP</span>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <div class="paper-title"><a href="https://arxiv.org/abs/2309.00424" target="_blank">Learning Speech Representation From Contrastive Token-Acoustic Pretraining</a><span class="arxiv-link">arXiv</span></div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2024</span>
+                        <span class="venue-badge">ICASSP</span>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <div class="paper-title"><a href="https://arxiv.org/abs/2404.11275" target="_blank">Jointly Recognizing Speech and Singing Voices Based on Multi-Task Audio Source Separation</a><span class="arxiv-link">arXiv</span></div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2024</span>
+                        <span class="venue-badge">ICME</span>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <div class="paper-title"><a href="https://arxiv.org/abs/2412.19860" target="_blank">Uniavatar: Taming lifelike audio-driven talking head generation with comprehensive motion and lighting control</a><span class="arxiv-link">arXiv</span></div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2024</span>
+                        <span class="venue-badge">arXiv</span>
+                    </div>
+                </div>
+
+                <!-- 2023 -->
+                <div class="paper-item">
+                    <div class="paper-title">Holosinger: semantics and music driven motion generation with octahedral holographic projection</div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2023</span>
+                        <span class="venue-badge">ACM MM</span>
+                    </div>
+                </div>
+
+                <!-- 2022 -->
+                <div class="paper-item">
+                    <div class="paper-title">Improving Spoken Language Understanding with Cross-Modal Contrastive Learning</div>
+                    <div class="paper-meta">
+                        <span class="year-badge">2022</span>
+                        <span class="venue-badge">INTERSPEECH</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 text-center bg-white border-t border-zinc-100">
+        <p class="mono text-[9px] text-zinc-300 uppercase tracking-widest font-medium">
+            Eric • Algorithm Specialist • 2026
+        </p>
+    </footer>
+
+</body>
+
+</html>
