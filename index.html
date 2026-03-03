@@ -41,12 +41,7 @@
             gap: 0.75rem;
         }
 
-        .section-label::after {
-            content: "";
-            height: 1px;
-            flex-grow: 1;
-            background: linear-gradient(to right, #f4f4f5, transparent);
-        }
+
 
         .img-logo {
             width: 24px;
@@ -116,8 +111,7 @@
 
     <!-- navi -->
     <nav class="fixed top-0 w-full z-50 glass-nav">
-        <div class="max-w-4xl mx-auto px-6 h-14 flex items-center justify-between">
-            <span class="text-xs font-bold tracking-widest uppercase text-zinc-500">Eric</span>
+        <div class="max-w-4xl mx-auto px-6 h-14 flex items-center justify-end">
             <div class="flex space-x-6 text-[10px] mono font-bold text-zinc-400 uppercase tracking-widest">
                 <a href="#experience" class="hover:text-emerald-500 transition-colors">Experience</a>
                 <a href="#education" class="hover:text-emerald-500 transition-colors">Education</a>
@@ -132,9 +126,6 @@
             <h1 class="text-5xl font-extrabold tracking-tighter text-zinc-700 mb-6 leading-none">
                 ERIC<span class="text-emerald-400">.</span>
             </h1>
-            <div class="space-y-1 mb-10">
-                <p class="text-base text-zinc-400 font-medium tracking-tight">十年 AI 算法研发和管理经验</p>
-            </div>
 
             <div class="flex flex-wrap gap-3">
                 <div class="expertise-tag flex items-center gap-3">
@@ -152,13 +143,6 @@
                     <span class="h-3 w-px bg-zinc-100"></span>
                     <span class="en">Multimodal LLM</span>
                 </div>
-                <div class="expertise-tag flex items-center gap-3">
-                    <span class="cn">VLA模型</span>
-                    <span class="h-3 w-px bg-zinc-100"></span>
-                    <span class="en">Vision-Language-Action Model
-
-                    </span>
-                </div>
             </div>
         </div>
     </header>
@@ -170,101 +154,118 @@
 
             <div class="space-y-12">
                 <!-- 1 -->
-                <div class="item-row grid grid-cols-1 md:grid-cols-4 gap-4">
-                    <div class="space-y-1">
-                        <div class="text-zinc-400 text-[10px] mono font-bold uppercase tracking-widest">2023 — 2026
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <img src="./images/AUTO.png" alt="理想汽车" class="img-logo" onerror="this.style.display='none'">
-                            <span class="text-base font-bold text-zinc-500">理想汽车</span>
-                        </div>
+                <div class="item-row">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="text-zinc-400 text-[10px] mono font-bold uppercase tracking-widest">2023 — 2026</div>
+                        <div class="flex-1 h-px bg-zinc-100"></div>
                     </div>
-                    <div class="md:col-span-3">
-                        <h3 class="text-base font-extrabold text-zinc-500 mb-4 uppercase tracking-wide">基座模型 高级总监</h3>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            <ul class="dot-list text-[13px] text-zinc-400">
-                                <li class="font-bold text-zinc-500 mb-1">语音交互</li>
-                                <li>自研端到端语音交互大模型</li>
-                                <li>赋能智能座舱、智能眼镜的自然对话</li>
-                            </ul>
-                            <ul class="dot-list text-[13px] text-zinc-400">
-                                <li class="font-bold text-zinc-500 mb-1">多模态生成</li>
-                                <li>自研语音合成大模型</li>
-                                <li>数字人视频生成和多模态 AI 播客</li>
-                            </ul>
-                            <ul class="dot-list text-[13px] text-zinc-400">
-                                <li class="font-bold text-zinc-500 mb-1">具身智能和多模态大模型</li>
-                                <li>构建 VLA 基座模型与数据仿真平台</li>
-                                <li>具身多模态感知的深度融合，赋能智能驾驶</li>
-                            </ul>
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="md:w-1/4">
+                            <div class="flex items-center gap-2">
+                                <img src="./images/AUTO.png" alt="理想汽车" class="img-logo" onerror="this.style.display='none'">
+                                <span class="text-base font-bold text-zinc-500">理想汽车</span>
+                            </div>
+                        </div>
+                        <div class="md:w-3/4">
+                            <h3 class="text-base font-extrabold text-zinc-500 mb-4 uppercase tracking-wide">基座模型 高级总监</h3>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <ul class="dot-list text-[13px] text-zinc-400">
+                                    <li class="font-bold text-zinc-500 mb-1">语音交互</li>
+                                    <li>端到端语音交互大模型</li>
+                                    <li>智能座舱语音交互</li>
+                                    <li>智能眼镜多模态交互</li>
+                                </ul>
+                                <ul class="dot-list text-[13px] text-zinc-400">
+                                    <li class="font-bold text-zinc-500 mb-1">多模态生成</li>
+                                    <li>语音合成大模型</li>
+                                    <li>音视频多模态 AI 播客</li>
+                                    <li>智能驾驶及具身智能世界模型</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- 2 -->
-                <div class="item-row grid grid-cols-1 md:grid-cols-4 gap-4 pt-10 border-t border-zinc-100">
-                    <div class="space-y-1">
-                        <div class="text-zinc-400 text-[10px] mono font-bold uppercase tracking-widest">2021 —
-                            2023</div>
-                        <div class="flex items-center gap-2">
-                            <img src="./images/KWAI.png" alt="快手" class="img-logo" onerror="this.style.display='none'">
-                            <span class="text-base font-bold text-zinc-500">快手</span>
-                        </div>
+                <div class="item-row">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="text-zinc-400 text-[10px] mono font-bold uppercase tracking-widest">2021 — 2023</div>
+                        <div class="flex-1 h-px bg-zinc-100"></div>
                     </div>
-                    <div class="md:col-span-3">
-                        <h3 class="text-base font-extrabold text-zinc-500 mb-4 uppercase tracking-wide">音频中心 语音技术负责人
-                        </h3>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            <ul class="dot-list text-[13px] text-zinc-400">
-                                <li class="font-bold text-zinc-500 mb-1">语音合成与数字人</li>
-                                <li>短视频智能配音与声音转换、歌声合成</li>
-                                <li>直播/短视频数字人生成</li>
-                            </ul>
-                            <ul class="dot-list text-[13px] text-zinc-400">
-                                <li class="font-bold text-zinc-500 mb-1">语音识别与内容理解</li>
-                                <li>直播实时风控与自动化视频字幕生成</li>
-                                <li>直播智能切片算法，赋能内容创作与分发</li>
-                            </ul>
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="md:w-1/4">
+                            <div class="flex items-center gap-2">
+                                <img src="./images/KWAI.png" alt="快手" class="img-logo" onerror="this.style.display='none'">
+                                <span class="text-base font-bold text-zinc-500">快手</span>
+                            </div>
+                        </div>
+                        <div class="md:w-3/4">
+                            <h3 class="text-base font-extrabold text-zinc-500 mb-4 uppercase tracking-wide">音频中心 语音技术负责人</h3>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <ul class="dot-list text-[13px] text-zinc-400">
+                                    <li class="font-bold text-zinc-500 mb-1">语音合成与数字人</li>
+                                    <li>短视频智能配音</li>
+                                    <li>歌声合成</li>
+                                    <li>直播/短视频数字人生成</li>
+                                </ul>
+                                <ul class="dot-list text-[13px] text-zinc-400">
+                                    <li class="font-bold text-zinc-500 mb-1">语音识别与内容理解</li>
+                                    <li>直播/短视频音频语音及内容理解</li>
+                                    <li>自动化视频字幕生成</li>
+                                    <li>直播智能切片</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- 3 -->
-                <div class="item-row grid grid-cols-1 md:grid-cols-4 gap-4 pt-10 border-t border-zinc-100">
-                    <div class="space-y-1">
-                        <div class="text-zinc-400 text-[10px] mono font-bold uppercase tracking-widest">2020 —
-                            2021</div>
-                        <div class="flex items-center gap-2">
-                            <img src="./images/BABA.png" alt="阿里巴巴" class="img-logo" onerror="this.style.display='none'">
-                            <span class="text-base font-bold text-zinc-500">阿里巴巴</span>
-                        </div>
+                <div class="item-row">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="text-zinc-400 text-[10px] mono font-bold uppercase tracking-widest">2020 — 2021</div>
+                        <div class="flex-1 h-px bg-zinc-100"></div>
                     </div>
-                    <div class="md:col-span-3">
-                        <h3 class="text-base font-extrabold text-zinc-500 mb-3 uppercase tracking-wide">达摩院 高级算法专家</h3>
-                        <ul class="dot-list text-[13px] text-zinc-400">
-                            <li>阿里云语音合成 ToB 业务算法，客服、电商、智能硬件、教育多场景应用</li>
-                            <li>高德地图语音导航及交互</li>
-                        </ul>
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="md:w-1/4">
+                            <div class="flex items-center gap-2">
+                                <img src="./images/BABA.png" alt="阿里巴巴" class="img-logo" onerror="this.style.display='none'">
+                                <span class="text-base font-bold text-zinc-500">阿里巴巴</span>
+                            </div>
+                        </div>
+                        <div class="md:w-3/4">
+                            <h3 class="text-base font-extrabold text-zinc-500 mb-3 uppercase tracking-wide">达摩院 高级算法专家</h3>
+                            <ul class="dot-list text-[13px] text-zinc-400">
+                                <li class="font-bold text-zinc-500 mb-1">语音合成</li>
+                            </ul>
+                            <ul class="dot-list text-[13px] text-zinc-400">
+                                <li>阿里云语音合成</li>
+                                <li>高德地图语音导航交互</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
                 <!-- 4 -->
-                <div class="item-row grid grid-cols-1 md:grid-cols-4 gap-4 pt-10 border-t border-zinc-100">
-                    <div class="space-y-1">
-                        <div class="text-zinc-400 text-[10px] mono font-bold uppercase tracking-widest">2015 —
-                            2020</div>
-                        <div class="flex items-center gap-2">
-                            <img src="./images/BIDU.png" alt="百度" class="img-logo" onerror="this.style.display='none'">
-                            <span class="text-base font-bold text-zinc-500">百度</span>
-                        </div>
+                <div class="item-row">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="text-zinc-400 text-[10px] mono font-bold uppercase tracking-widest">2015 — 2020</div>
+                        <div class="flex-1 h-px bg-zinc-100"></div>
                     </div>
-                    <div class="md:col-span-3">
-                        <h3 class="text-base font-extrabold text-zinc-500 mb-3 uppercase tracking-wide">语音技术部 资深研发工程师
-                        </h3>
-                        <ul class="dot-list text-[13px] text-zinc-400">
-                            <li>语音合成算法研发，百度地图语音导航、小度音箱及百度 APP 语音播报</li>
-                            <li>两次百度最高奖获得者</li>
-                        </ul>
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="md:w-1/4">
+                            <div class="flex items-center gap-2">
+                                <img src="./images/BIDU.png" alt="百度" class="img-logo" onerror="this.style.display='none'">
+                                <span class="text-base font-bold text-zinc-500">百度</span>
+                            </div>
+                        </div>
+                        <div class="md:w-3/4">
+                            <h3 class="text-base font-extrabold text-zinc-500 mb-3 uppercase tracking-wide">语音技术部 资深研发工程师</h3>
+                            <ul class="dot-list text-[13px] text-zinc-400">
+                                <li class="font-bold text-zinc-500 mb-1">语音合成</li>
+                                <li>语音合成算法，百度地图语音导航、小度音箱及百度 APP 语音播报</li>
+                                <li>两次百度最高奖获得者</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -275,31 +276,47 @@
     <section id="education" class="px-6 py-12 bg-white border-t border-zinc-50">
         <div class="max-w-4xl mx-auto">
             <span class="section-label">Education</span>
-            <div class="item-row grid grid-cols-1 md:grid-cols-4 gap-4">
-                <div class="space-y-1">
+            
+            <!-- 1 -->
+            <div class="item-row">
+                <div class="flex items-center gap-4 mb-4">
                     <div class="text-zinc-400 text-[10px] mono font-bold uppercase tracking-widest">2010 — 2015</div>
-                    <div class="flex items-center gap-2">
-                        <img src="./images/UCAS.png" alt="CAS" class="img-logo" onerror="this.style.display='none'">
-                        <span class="text-base font-bold text-zinc-500">中国科学院大学</span>
-                    </div>
+                    <div class="flex-1 h-px bg-zinc-100"></div>
                 </div>
-                <div class="md:col-span-3">
-                    <h3 class="text-base font-extrabold text-zinc-500 mb-2 uppercase tracking-wide">模式识别与智能系统 工学博士</h3>
-                    <ul class="dot-list text-[13px] text-zinc-400">
-                        <li>数字人、多模态人机交互方向</li>
-                    </ul>
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="md:w-1/4">
+                        <div class="flex items-center gap-2">
+                            <img src="./images/UCAS.png" alt="CAS" class="img-logo" onerror="this.style.display='none'">
+                            <span class="text-base font-bold text-zinc-500">中国科学院大学</span>
+                        </div>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-base font-extrabold text-zinc-500 mb-2 uppercase tracking-wide">模式识别与智能系统 工学博士</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <ul class="dot-list text-[13px] text-zinc-400">
+                                <li class="font-bold text-zinc-500 mb-1">数字人、多模态人机交互方向</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-                <div class="item-row grid grid-cols-1 md:grid-cols-4 gap-4 pt-10 border-t border-zinc-100">
-                <div class="space-y-1">
+
+            <!-- 2 -->
+            <div class="item-row mt-12">
+                <div class="flex items-center gap-4 mb-4">
                     <div class="text-zinc-400 text-[10px] mono font-bold uppercase tracking-widest">2006 — 2010</div>
-                    <div class="flex items-center gap-2">
-                        <img src="./images/XIDIAN.png" alt="XIDIAN" class="img-logo" onerror="this.style.display='none'">
-                        <span class="text-base font-bold text-zinc-500">西安电子科技大学</span>
-                    </div>
+                    <div class="flex-1 h-px bg-zinc-100"></div>
                 </div>
-                <div class="md:col-span-3">
-                    <h3 class="text-base font-extrabold text-zinc-500 mb-2 uppercase tracking-wide">自动化专业 工学学士</h3>
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="md:w-1/4">
+                        <div class="flex items-center gap-2">
+                            <img src="./images/XIDIAN.png" alt="XIDIAN" class="img-logo" onerror="this.style.display='none'">
+                            <span class="text-base font-bold text-zinc-500">西安电子科技大学</span>
+                        </div>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-base font-extrabold text-zinc-500 mb-2 uppercase tracking-wide">自动化专业 工学学士</h3>
+                    </div>
                 </div>
             </div>
         </div>

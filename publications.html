@@ -48,6 +48,27 @@
             background: linear-gradient(to right, #f4f4f5, transparent);
         }
 
+        .expertise-tag {
+            padding: 0.6rem 1rem;
+            background: #fcfcfc;
+            border-radius: 6px;
+            border: 1px solid #f3f4f6;
+        }
+
+        .expertise-tag .cn {
+            font-size: 13px;
+            color: #52525b;
+            font-weight: 600;
+        }
+
+        .expertise-tag .en {
+            font-size: 9px;
+            color: #a1a1aa;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-family: 'JetBrains Mono';
+        }
+
         .year-badge {
             font-family: 'JetBrains Mono', monospace;
             font-size: 10px;
@@ -71,12 +92,12 @@
         .paper-title {
             font-size: 15px;
             font-weight: 600;
-            color: #3f3f46;
+            color: #71717a;
             line-height: 1.5;
         }
 
         .paper-title a {
-            color: #3f3f46;
+            color: #71717a;
             text-decoration: none;
             border-bottom: 1px solid transparent;
             transition: all 0.2s;
@@ -130,8 +151,7 @@
 
     <!-- navi -->
     <nav class="fixed top-0 w-full z-50 glass-nav">
-        <div class="max-w-4xl mx-auto px-6 h-14 flex items-center justify-between">
-            <a href="index.html" class="text-xs font-bold tracking-widest uppercase text-zinc-500 hover:text-emerald-500 transition-colors">Eric</a>
+        <div class="max-w-4xl mx-auto px-6 h-14 flex items-center justify-end">
             <div class="flex space-x-6 text-[10px] mono font-bold text-zinc-400 uppercase tracking-widest">
                 <a href="index.html#experience" class="hover:text-emerald-500 transition-colors">Experience</a>
                 <a href="index.html#education" class="hover:text-emerald-500 transition-colors">Education</a>
@@ -143,12 +163,27 @@
     <!-- Header -->
     <header class="pt-32 pb-12 px-6 bg-zinc-100">
         <div class="max-w-4xl mx-auto">
-            <h1 class="text-4xl font-extrabold tracking-tighter text-zinc-700 mb-4 leading-none">
-                PUBLICATIONS<span class="text-emerald-400">.</span>
+            <h1 class="text-5xl font-extrabold tracking-tighter text-zinc-700 mb-6 leading-none">
+                ERIC<span class="text-emerald-400">.</span>
             </h1>
-            <p class="text-sm text-zinc-400 font-medium">
-                研究论文与学术发表
-            </p>
+
+            <div class="flex flex-wrap gap-3">
+                <div class="expertise-tag flex items-center gap-3">
+                    <span class="cn">语音技术</span>
+                    <span class="h-3 w-px bg-zinc-100"></span>
+                    <span class="en">Speech Tech</span>
+                </div>
+                <div class="expertise-tag flex items-center gap-3">
+                    <span class="cn">多模态生成</span>
+                    <span class="h-3 w-px bg-zinc-100"></span>
+                    <span class="en">Multimodal Generation</span>
+                </div>
+                <div class="expertise-tag flex items-center gap-3">
+                    <span class="cn">多模态大模型</span>
+                    <span class="h-3 w-px bg-zinc-100"></span>
+                    <span class="en">Multimodal LLM</span>
+                </div>
+            </div>
         </div>
     </header>
 
